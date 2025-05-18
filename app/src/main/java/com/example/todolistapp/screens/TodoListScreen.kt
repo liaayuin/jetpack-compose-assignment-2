@@ -1,5 +1,7 @@
 package com.example.todolistapp.screens
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -32,6 +34,7 @@ import com.example.todolistapp.data.Todo
 import com.example.todolistapp.util.NetworkResult
 import com.example.todolistapp.viewmodels.TodoListViewModel
 
+@RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TodoListScreen(
